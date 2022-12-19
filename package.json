@@ -1,7 +1,7 @@
 {
   "name": "amazona",
   "version": "1.0.0",
-  "description": "# Lessons",
+  "description": "# Eat Fresh, Stay Healthy",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
@@ -10,12 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angelamayo/chicorosefarm.git"
+    "url": "git+https://github.com/angelamayo/chicorose.git"
   },
   "author": "Angel Amayo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angelamayo/chicorosefarm/issues"
-  },
-  "homepage": "https://chicorosefarm.com"
+    "url": "https://github.com/angelamayo/chicorose/issues"
+  }
 }
