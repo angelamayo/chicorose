@@ -96,7 +96,6 @@ export default function ShippingAddressScreen() {
             <Form.Control
               value={postalCode}
               onChange={(e) => setPostalCode(e.target.value)}
-              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="country">
