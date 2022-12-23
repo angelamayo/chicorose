@@ -155,7 +155,7 @@ function App() {
 						</Nav.Item>
 						{categories.map((category) => (
 							<Nav.Item key={category}>
-								<LinkContainer
+								<LinkContainer className="text-warning"
 									to={`/search?category=${category}`}
 									onClick={() => setSidebarIsOpen(false)}
 								>
