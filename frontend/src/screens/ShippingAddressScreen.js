@@ -15,6 +15,7 @@ export default function ShippingAddressScreen() {
     cart: { shippingAddress },
   } = state;
   const [fullName, setFullName] = useState(shippingAddress.fullName || '');
+  const [mobile, setMobile] = useState(shippingAddress.mobile || '');
   const [address, setAddress] = useState(shippingAddress.address || '');
   const [city, setCity] = useState(shippingAddress.city || '');
   const [postalCode, setPostalCode] = useState(
@@ -32,6 +33,7 @@ export default function ShippingAddressScreen() {
       type: 'SAVE_SHIPPING_ADDRESS',
       payload: {
         fullName,
+        mobile,
         address,
         city,
         postalCode,
@@ -43,6 +45,7 @@ export default function ShippingAddressScreen() {
       'shippingAddress',
       JSON.stringify({
         fullName,
+        mobile,
         address,
         city,
         postalCode,
@@ -72,6 +75,14 @@ export default function ShippingAddressScreen() {
             <Form.Control
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="fullName">
+            <Form.Label>Mobile</Form.Label>
+            <Form.Control
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
               required
             />
           </Form.Group>
