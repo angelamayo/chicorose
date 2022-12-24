@@ -36,16 +36,16 @@ const reducer = (state, action) => {
 
 const prices = [
   {
-    name: 'N1 to N50',
-    value: '1-50',
+    name: 'N101 to N1000',
+    value: '1001-1000',
   },
   {
-    name: 'N51 to N200',
-    value: '51-200',
+    name: 'N1001 to N2000',
+    value: '1001-2000',
   },
   {
-    name: 'N201 to N1000',
-    value: '201-1000',
+    name: 'N2001 to N10000',
+    value: '2001-10000',
   },
 ];
 
