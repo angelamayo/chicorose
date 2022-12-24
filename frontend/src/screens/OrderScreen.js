@@ -309,9 +309,7 @@ export default function OrderScreen() {
                       <LoadingBox />
                     ) : (
                       <div>
-                        <PayPalButtons
-                         
-                        ></PayPalButtons>
+                        
                       </div>
                     )}
                     {loadingPay && <LoadingBox></LoadingBox>}
