@@ -78,7 +78,7 @@ export default function ShippingAddressScreen() {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="fullName">
+          <Form.Group className="mb-3" controlId="mobile">
             <Form.Label>Mobile</Form.Label>
             <Form.Control
               value={mobile}
