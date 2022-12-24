@@ -332,6 +332,41 @@ export default function OrderScreen() {
               </ListGroup>
             </Card.Body>
           </Card>
+          <Card className="mb-3">
+						<Card.Body>
+							<Card.Title>Pay To</Card.Title>
+							<ListGroup variant="flush">
+								<ListGroup.Item>
+									<Row>
+										<Col><strong>CHICOROSEFARM NIG. LTD</strong></Col>
+									</Row>
+								</ListGroup.Item>
+								<ListGroup.Item>
+									<Row>
+										<Col>Account Number</Col>
+										<Col>1212857563</Col>
+									</Row>
+								</ListGroup.Item>
+
+								<ListGroup.Item>
+									<Row>
+										<Col>
+											<strong> Order Total</strong>
+										</Col>
+										<Col>
+											<strong>N{order.totalPrice.toFixed(2)}</strong>
+										</Col>
+									</Row>
+								</ListGroup.Item>
+								<ListGroup.Item className="text-start" >
+									<Row>
+										<Col>All payments should please be made only to Chicorosefarm Nig. Ltd. <br/><br/>Send proof of payment to Chicorose on WhatsApp on <strong> +234 810 072 5702</strong> to confirm your order. <br/><br/>Thanks for shopping with us!</Col>
+									</Row>
+								</ListGroup.Item>
+								
+							</ListGroup>
+						</Card.Body>
+					</Card>
         </Col>
       </Row>
     </div>
