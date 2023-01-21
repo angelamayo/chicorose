@@ -266,9 +266,9 @@ function App() {
 					</Container>
 				</main>
 				<footer>
-					<div className="text-center">
-						Copyright @ 2022 - 2024 Chicorosefarm <br/> All rights reserved
-					</div>
+					<h6 className="text-center">
+						Copyright &#169;2022 - 2024 Chicorosefarm <br/> All rights reserved
+					</h6>
 				</footer>
 			</div>
 		</BrowserRouter>
