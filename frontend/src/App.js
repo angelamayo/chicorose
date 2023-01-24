@@ -34,6 +34,7 @@ import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import MapScreen from './screens/MapScreen';
+import SocialFollow from './SocialFollow';
 
 function App() {
 	const { state, dispatch: ctxDispatch } = useContext(Store);
