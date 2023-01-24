@@ -29,7 +29,7 @@ export default function SocialFollow() {
       </a>
       <br/>
       <br/>
-      <h4>Copyright &#169; 2022 - 2024 Chicorosefarm <br/> All rights reserved</h4>
+      <h4>Copyright &#169; 2022 - 2024 Chicorosefarm Nig. Ltd <br/> All rights reserved</h4>
       <h6>Developed by Angel Amayo<br/>&#64; Citybiz Tech </h6>
 </div>
   );
