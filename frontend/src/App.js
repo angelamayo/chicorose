@@ -266,9 +266,7 @@ function App() {
 					</Container>
 				</main>
 				<footer>
-					<h6 className="text-center">
-						Copyright &#169;2022 - 2024 Chicorosefarm <br/> All rights reserved
-					</h6>
+					<div className="text-center"> <SocialFollow deferLoading={true} /></div>
 				</footer>
 			</div>
 		</BrowserRouter>
