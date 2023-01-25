@@ -76,7 +76,7 @@ function App() {
 			>
 				<ToastContainer position="bottom-center" limit={1} />
 				<header>
-					<Navbar bg="success" variant="dark" expand="lg">
+					<Navbar bg="success" variant="dark" expand="lg" fixed="top">
 						<Container>
 							<Button
 								variant="success"
