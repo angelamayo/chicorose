@@ -8,11 +8,11 @@ body {
 }
 .site-container {
   min-height: 100vh;
+  margin-top: 7vh;
 }
 
 h1 {
 text-align: center;
-margin-top: 10vh;
 }
 
 main {
