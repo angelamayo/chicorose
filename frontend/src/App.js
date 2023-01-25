@@ -269,6 +269,14 @@ function App() {
 				<footer>
 					<div className="text-center"> <SocialFollow deferLoading={true} /></div>
 				</footer>
+				<a
+        href="https://wa.me/2348100725702"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
 			</div>
 		</BrowserRouter>
 	);
