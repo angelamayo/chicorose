@@ -88,18 +88,21 @@ function App() {
 							<LinkContainer to="/">
 								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
+                                                        <nav>
+								<Link to="/cart" className="nav-link">
+								Cart
+								{cart.cartItems.length > 0 && (
+									<Badge pill bg="danger">
+										{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+									</Badge>
+										)}
+							        </Link>
+                                                        </nav>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
-								<SearchBox />
+								<nav id="search"><SearchBox /></nav>
 								<Nav className="me-auto  w-100  justify-content-end">
-									<Link to="/cart" className="nav-link">
-										Cart
-										{cart.cartItems.length > 0 && (
-											<Badge pill bg="danger">
-												{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
-											</Badge>
-										)}
-									</Link>
+
 									{userInfo ? (
 										<NavDropdown title={userInfo.name} id="basic-nav-dropdown">
 											<LinkContainer to="/profile">
