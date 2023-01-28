@@ -10,19 +10,18 @@ body {
   min-height: 100vh;
   margin-top: 7vh;
 }
-
 h1 {
 text-align: center;
 }
-
 #logo-image {
   border-radius: 50%;
 }
-
+#cart {
+  color: #f0c040;
+}
 #search {
   margin-top:7px;
 }
-
 main {
   flex: 1;
 }
