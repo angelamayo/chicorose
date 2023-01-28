@@ -15,6 +15,10 @@ h1 {
 text-align: center;
 }
 
+#logo-image {
+  border-radius: 50%;
+}
+
 #search {
   margin-top:7px;
 }
