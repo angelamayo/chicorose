@@ -85,8 +85,8 @@ function App() {
 								 <img
                                                                      alt="Chicorosefarm logo"
                                                                      src="/logo192.png"
-                                                                     width="30"
-                                                                     height="30"
+                                                                     width="24"
+                                                                     height="24"
                                                                      className="d-inline-block align-top"
                                                                      />{' '}
 							</Button>
