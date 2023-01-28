@@ -82,11 +82,11 @@ function App() {
 								variant="success"
 								onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
 							>
-								 <img
+								 <img id="logo-image"
                                                                      alt="Chicorosefarm logo"
                                                                      src="/logo192.png"
-                                                                     width="24"
-                                                                     height="24"
+                                                                     width="30"
+                                                                     height="30"
                                                                      className="d-inline-block align-top"
                                                                      />{' '}
 							</Button>
@@ -94,7 +94,7 @@ function App() {
 							<LinkContainer to="/">
 								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
-                                                        <Nav className="me-auto" >
+                                                        <Nav >
 								<Link to="/cart" className="nav-link">
 								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 								{cart.cartItems.length > 0 && (
@@ -106,7 +106,7 @@ function App() {
                                                         </Nav>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
-								<Nav id="search"><SearchBox /></Nav>
+								<nav id="search"><SearchBox /></nav>
 								<Nav className="me-auto  w-100  justify-content-end">
 
 									{userInfo ? (
