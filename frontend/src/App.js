@@ -90,7 +90,7 @@ function App() {
 							</LinkContainer>
                                                         <nav>
 								<Link to="/cart" className="nav-link">
-								Cart
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 								{cart.cartItems.length > 0 && (
 									<Badge pill bg="danger">
 										{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
