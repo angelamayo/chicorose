@@ -82,7 +82,13 @@ function App() {
 								variant="success"
 								onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
 							>
-								<i className="fas fa-bars"></i>
+								 <img
+                                                                     alt="Chicorosefarm logo"
+                                                                     src="/logo192.png"
+                                                                     width="30"
+                                                                     height="30"
+                                                                     className="d-inline-block align-top"
+                                                                     />{' '}
 							</Button>
 
 							<LinkContainer to="/">
