@@ -94,7 +94,7 @@ function App() {
 							<LinkContainer to="/">
 								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
-                                                        <nav>
+                                                        <Nav className="me-auto" >
 								<Link to="/cart" className="nav-link">
 								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 								{cart.cartItems.length > 0 && (
@@ -103,10 +103,10 @@ function App() {
 									</Badge>
 										)}
 							        </Link>
-                                                        </nav>
+                                                        </Nav>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
-								<nav id="search"><SearchBox /></nav>
+								<Nav id="search"><SearchBox /></Nav>
 								<Nav className="me-auto  w-100  justify-content-end">
 
 									{userInfo ? (
