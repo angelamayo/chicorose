@@ -104,7 +104,7 @@ function App() {
 										)}
 							        </Link>                                                                             
                                                         </Nav>
-                                                        <Nav><SearchBox /></Nav>                                                                          
+                                                        <Nav><SearchBox id="search" /></Nav>                                                                          
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
 								
