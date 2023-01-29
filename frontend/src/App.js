@@ -95,7 +95,6 @@ function App() {
 								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
                                                         <Nav >
-								<Navbar.Brand>
 								<Link to="/cart" className="nav-link">
 								<i id="cart" class="fa fa-shopping-cart" aria-hidden="true"></i>
 								{cart.cartItems.length > 0 && (
@@ -103,8 +102,7 @@ function App() {
 										{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
 									</Badge>
 										)}
-							        </Link>
-                                                                 </Navbar.Brand>                                                                             
+							        </Link>                                                                             
                                                         </Nav>
                                                         <Nav><SearchBox /></Nav>                                                                          
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
