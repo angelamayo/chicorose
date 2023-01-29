@@ -78,7 +78,7 @@ function App() {
 				<header>
 					<Navbar bg="success" variant="dark" expand="lg" fixed="top">
 						<Container>
-							<Button
+							<Navbar.Brand
 								variant="success"
 								onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
 							>
@@ -89,12 +89,13 @@ function App() {
                                                                      height="30"
                                                                      className="d-inline-block align-top"
                                                                      />{' '}
-							</Button>
+							</Navbar.Brand>
 
 							<LinkContainer to="/">
 								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
                                                         <Nav >
+								<Navbar.Brand>
 								<Link to="/cart" className="nav-link">
 								<i id="cart" class="fa fa-shopping-cart" aria-hidden="true"></i>
 								{cart.cartItems.length > 0 && (
@@ -103,10 +104,12 @@ function App() {
 									</Badge>
 										)}
 							        </Link>
+                                                                 </Navbar.Brand>                                                                             
                                                         </Nav>
+                                                        <Nav><SearchBox /></Nav>                                                                          
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
-								<nav id="search"><SearchBox /></nav>
+								
 								<Nav className="me-auto  w-100  justify-content-end">
 
 									{userInfo ? (
