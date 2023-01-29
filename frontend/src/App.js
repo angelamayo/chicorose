@@ -20,7 +20,6 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import ProfileScreen from './screens/ProfileScreen';
-import Button from 'react-bootstrap/Button';
 import { getError } from './utils';
 import axios from 'axios';
 import SearchBox from './components/SearchBox';
@@ -102,9 +101,9 @@ function App() {
 										{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
 									</Badge>
 										)}
-							        </Link>                                                                             
+							        </Link>
                                                         </Nav>
-                                                        <Nav><SearchBox id="search" /></Nav>                                                                          
+                                                        <Nav id="search"><SearchBox /></Nav>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 							<Navbar.Collapse id="basic-navbar-nav">
 								
