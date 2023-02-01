@@ -77,9 +77,16 @@ function App() {
 				<header>
 					<Navbar bg="success" variant="dark" expand="lg" fixed="top">
 						<Container>
+							<Button
+                                                           variant="dark"
+                                                           onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
+                         >
+                                                          <i className="fas fa-bars"></i>
+                                                        </Button>
+
+							<<LinkContainer to="/">
 							<Navbar.Brand
 								variant="success"
-								onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
 							>
 								 <img id="logo-image"
                                                                      alt="Chicorosefarm logo"
@@ -88,10 +95,8 @@ function App() {
                                                                      height="30"
                                                                      className="d-inline-block align-top"
                                                                      />{' '}
+								Chicorosefarm
 							</Navbar.Brand>
-
-							<LinkContainer to="/">
-								<Navbar.Brand>Chicorosefarm</Navbar.Brand>
 							</LinkContainer>
                                                         <Nav >
 								<Link to="/cart" className="nav-link">
