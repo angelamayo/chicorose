@@ -157,6 +157,17 @@ export default function SearchScreen() {
               ))}
             </ul>
           </div>
+               {products.length === 0 && (
+                <MessageBox>No Product Found</MessageBox>
+              )}
+
+              <Row>
+                {products.map((product) => (
+                  <Col sm={6} lg={4} className="mb-3" key={product._id}>
+                    <Product product={product}></Product>
+                  </Col>
+                ))}
+              </Row>
           <div>
             <h3>Price</h3>
             <ul>
@@ -247,17 +258,7 @@ export default function SearchScreen() {
                   </select>
                 </Col>
               </Row>
-              {products.length === 0 && (
-                <MessageBox>No Product Found</MessageBox>
-              )}
-
-              <Row>
-                {products.map((product) => (
-                  <Col sm={6} lg={4} className="mb-3" key={product._id}>
-                    <Product product={product}></Product>
-                  </Col>
-                ))}
-              </Row>
+              
 
               <div>
                 {[...Array(pages).keys()].map((x) => (
