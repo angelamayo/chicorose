@@ -79,7 +79,7 @@ function App() {
 					<Navbar bg="success" variant="dark" expand="lg" fixed="top">
 						<Container>
 							<Button
-						id="button"
+
                           variant="success"
                           onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
                          >
