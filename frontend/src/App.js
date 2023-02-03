@@ -8,8 +8,8 @@ import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import { LinkContainer } from 'react-router-bootstrap';
+import Button from 'react-bootstrap/Button';
 import { useContext, useEffect, useState } from 'react';
 import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
@@ -79,13 +79,15 @@ function App() {
 					<Navbar bg="success" variant="dark" expand="lg" fixed="top">
 						<Container>
 							<Button
-                                                           variant="dark"
-                                                           onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
+						id="button"
+                          variant="success"
+                          onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
                          >
-                                                          <i className="fas fa-bars"></i>
-                                                        </Button>
+                                   <i className="fas fa-bars"></i>
+                        </Button>
+							
 
-							<<LinkContainer to="/">
+							<LinkContainer to="/">
 							<Navbar.Brand
 								variant="success"
 							>
@@ -110,7 +112,7 @@ function App() {
 							        </Link>
                                                         </Nav>
                                                         
-							<Navbar.Toggle aria-controls="basic-navbar-nav" />
+							<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 							<Navbar.Collapse id="basic-navbar-nav">
 								<Nav id="search"><SearchBox /></Nav>
 								<Nav className="me-auto  w-100  justify-content-end">
